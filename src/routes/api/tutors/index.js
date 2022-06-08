@@ -11,7 +11,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 1,
-		img: '../assets/img/trainers/tutors-1.jpg',
+		img: '/assets/img/trainers/tutors-1.jpg',
 		name: 'Felix Pratama',
 		desc: `Process Plant Design, Product Design and Development, Transport Phenomena, Fluid and Particle Mechanics`,
 		experience: `Felix has 4 years-experience in handling supply chain management at consumer goods company in Indonesia. He teaches chemical engineering subjects since 2016 as a lecturer assistant at Universitas Indonesia.`,
@@ -31,7 +31,7 @@ export const tutors = [
 	//isdone
 	{
 		id: 2,
-		img: '../assets/img/trainers/tutors-2.jpg',
+		img: '/assets/img/trainers/tutors-2.jpg',
 		name: 'Leon Lukhas Santoso',
 		desc: `Chemical Reaction Engineering`,
 		experience: `Leon teaches chemical engineering subjects since 2018 as lecturer assistant at Universitas Indonesia. He obtained his Master Degree in Chemical Engineering Science at National Taiwan University of Science and Technology, Taipei.`,
@@ -50,7 +50,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 3,
-		img: '../assets/img/trainers/tutors-3.jpg',
+		img: '/assets/img/trainers/tutors-3.jpg',
 		name: 'Muhammad Yusuf Arya Ramadhan',
 		desc: `Bioprocess Engineering, Engineering Economy`,
 		experience: `Arya is a researcher in bioprocess topics since 2016 at Universitas Indonesia. He experienced handling manufacturing in fatty acid at Unilever Oleochemical Indonesia.`,
@@ -69,7 +69,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 4,
-		img: '../assets/img/trainers/tutors-4.jpg',
+		img: '/assets/img/trainers/tutors-4.jpg',
 		name: 'Sendy Winata',
 		desc: `Fundamentals of Mass Transfer, Process Control and Dynamics`,
 		experience: `Sendy experienced in process control in oil and gas industry and handling supply chain management at fast moving customer goods company in Indonesia`,
@@ -88,7 +88,7 @@ export const tutors = [
 	//isdone
 	{
 		id: 5,
-		img: '../assets/img/trainers/tutors-5.jpg',
+		img: '/assets/img/trainers/tutors-5.jpg',
 		name: 'Syailendra Supit',
 		desc: `Chemical Engineering Mathematics, Fundamentals of Calculus, Fluid Particle Mechanics, Numerical Computation for Engineers`,
 		experience: `Syailendra is a tutor at TORCHE Education and currently pursuing master degree at Institut Teknologi Bandung`,
@@ -107,7 +107,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 6,
-		img: '../assets/img/trainers/tutors-6.jpg',
+		img: '/assets/img/trainers/tutors-6.jpg',
 		name: 'Samuel Pangeran Aletheia',
 		desc: `Chemical Engineering Mathematics, Chemical Engineering Thermodynamics, Process Equipment Design`,
 		experience: `Graduated from Chemical Engineering major at Universitas Indonesia (Bachelor Degree) and Institut Teknologi Bandung (Master Degree), Samuel handles many projects in oil and gas industries.`,
@@ -128,7 +128,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 7,
-		img: '../assets/img/trainers/tutors-7.jpg',
+		img: '/assets/img/trainers/tutors-7.jpg',
 		name: 'Amalia Weediyanti',
 		desc: `Cell Culture for Engineers, Heat Transfer`,
 		experience: `Amalia graduated from Bioprocess Engineering University of Indonesia in 2021. She teaches Cell Culture and Heat Transfer since 2020.`,
@@ -147,7 +147,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 8,
-		img: '../assets/img/trainers/tutors-8.jpg',
+		img: '/assets/img/trainers/tutors-8.jpg',
 		name: 'Sharen Kevin',
 		desc: `Mass and Energy Balance, Process Engineering Drawing`,
 		experience: `Sharen graduated from Universitas Indonesia with bachelor degree in chemical engineering. She teaches Mass & Energy Balances and Engineering Drawing.`,
@@ -167,7 +167,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 9,
-		img: '../assets/img/trainers/tutors-9.jpg',
+		img: '/assets/img/trainers/tutors-9.jpg',
 		name: 'Muhammad Arif Darmawan',
 		desc: `Fundamentals of Analytical Chemistry, Fundamentals of Chemistry, Organic Chemistry for Engineers`,
 		experience: `Arif is someone who is innovative, collaborative and has an interest in the world of education and science`,
@@ -186,7 +186,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 10,
-		img: '../assets/img/trainers/tutors-10.jpg',
+		img: '/assets/img/trainers/tutors-10.jpg',
 		name: 'Syahdan Amir Muhammad',
 		desc: `Chemical Engineering Thermodynamics, Chemical Reaction Engineering, Fundamentals of Heat Transfer, Transport Phenomena`,
 		experience: `Syahdan is a Master of Chemical Engineering candidate at Institut Teknologi Bandung, which has been experienced as an assistant lecturer and laboratory assistant coordinator. He also has been awarded with LPDP Kemenkeu RI (PK-153)`,
@@ -207,7 +207,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 11,
-		img: '../assets/img/trainers/tutors-11.jpg',
+		img: '/assets/img/trainers/tutors-11.jpg',
 		name: 'Athallia Qatrunnada',
 		desc: `Biochemical Engineering, Biological Cell`,
 		experience: '',
@@ -226,7 +226,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 12,
-		img: '../assets/img/trainers/tutors-12.jpg',
+		img: '/assets/img/trainers/tutors-12.jpg',
 		name: 'Ridzki Ramadhan',
 		desc: `Chemical Process Simulation, Process Plant Design`,
 		experience: `Ridzki is a process engineer at one of the Petrochemical Plant in Indonesia. He graduated from Chemical Engineering ITS Surabaya.`,
@@ -245,7 +245,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 13,
-		img: '../assets/img/trainers/tutors-13.jpg',
+		img: '/assets/img/trainers/tutors-13.jpg',
 		name: 'Nadia Mumtazah',
 		desc: `Chemical Reaction Engineering, Mass and Energy Balances`,
 		experience: `Nadia is a lecturer in one of university in banten. She achieved her master degree in National Taiwan University of Science and Technology`,
@@ -276,7 +276,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 14,
-		img: '../assets/img/trainers/tutors-14.jpg',
+		img: '/assets/img/trainers/tutors-14.jpg',
 		name: 'Riswanda Himawan',
 		desc: `Chemical Process Simulation, Process Equipment Design`,
 		experience: `Process Engineer Petrochemical and Chemical Engineer enthausiast`,
@@ -295,7 +295,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 15,
-		img: '../assets/img/trainers/tutors-15.jpg',
+		img: '/assets/img/trainers/tutors-15.jpg',
 		name: 'Shafira Nur Adiningsih',
 		desc: `Chemical Engineering Thermodynamics, Mass and Energy Balances, Numerical Computation for Engineers`,
 		experience: '',
@@ -314,7 +314,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 16,
-		img: '../assets/img/trainers/tutors-16.jpg',
+		img: '/assets/img/trainers/tutors-16.jpg',
 		name: 'Sabtin Maulidiyah Hani',
 		desc: `Fundamentals of Analytical Chemistry, Fundamentals of Chemistry`,
 		experience: `Hani has over 3 years-experience in analytical chemistry laboratory. She started teaching in analytical chemistry field since 2018 as laboratory teaching assistant at Universitas Negeri Malang (UM).`,
@@ -338,7 +338,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 17,
-		img: '../assets/img/trainers/tutors-17.jpg',
+		img: '/assets/img/trainers/tutors-17.jpg',
 		name: 'Yulia Dwi Putri',
 		desc: `Organic Chemistry for Engineers`,
 		experience: `Organic chemistry tutors at TORCHE Education`,
@@ -361,7 +361,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 18,
-		img: '../assets/img/trainers/tutors-18.jpg',
+		img: '/assets/img/trainers/tutors-18.jpg',
 		name: 'Yevonnael Andrew',
 		desc: `Fundamentals of Physics, Numerical Computation for Engineers, Statistics & Probability`,
 		experience: '',
@@ -380,7 +380,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 19,
-		img: '../assets/img/trainers/tutors-19.jpg',
+		img: '/assets/img/trainers/tutors-19.jpg',
 		name: 'Nur Hendri Wahyu Firdaus',
 		desc: `Fundamentals of Mass Transfer`,
 		experience: `Hendri has been teaching chemical engineering since he was in college and has been a laboratory engineer for at least four years at the National Institute of Technology Malang. He had experience handling waste research and laboratory analysis.`,
@@ -400,7 +400,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 20,
-		img: '../assets/img/trainers/tutors-20.jpg',
+		img: '/assets/img/trainers/tutors-20.jpg',
 		name: 'Adam Aji Prayoga',
 		desc: `Fundamentals of Chemistry, Fundamentals of Analytical Chemistry`,
 		experience: '',
@@ -419,7 +419,7 @@ export const tutors = [
 	{
 		//isdone
 		id: 21,
-		img: '../assets/img/trainers/tutors-21.jpg',
+		img: '/assets/img/trainers/tutors-21.jpg',
 		name: 'Ajeng Triane Syawalia',
 		desc: `Fundamental of Chemistry`,
 		experience: `Chemistry Lecturer, Chemistry Tutor`,
