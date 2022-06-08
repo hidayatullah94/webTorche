@@ -1,9 +1,8 @@
 <script context="module">
 	// @ts-ignore
 	export const load = async ({ fetch }) => {
-		const res = await fetch(`http://localhost:3000/api/tutors`);
-		const data = await (await res).json();
-		const tutors = data.tutors;
+		const res = await fetch(`/api/tutors`);
+		const tutors = await res.json(); // returned as array
 
 		return {
 			props: {
@@ -18,10 +17,10 @@
 	import Footer from '@/component/Footer.svelte';
 	import { Instagram, Linkedin, Facebook, Twitter, JournalAlbum } from 'svelte-bootstrap-icons';
 
-	export /**
+	/**
 	 * @type {any}
 	 */
-	let tutors;
+	export let tutors;
 </script>
 
 <BreadCrum name={`TORCHE's Tutors`} link={'/'} linkOne={'Course'} linkTwo={'Tutors'} />

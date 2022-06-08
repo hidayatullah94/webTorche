@@ -1,11 +1,10 @@
 <script context="module">
 	// @ts-ignore
-	export const load = async ({ page, fetch }) => {
-		const id = page.params.id;
-		const res = await fetch(`http://localhost:3000/api/tutors/${id}`);
-		const data = await (await res).json();
-		const tutor = data.tutors;
-		console.log(tutor);
+	export const load = async ({ params, fetch }) => {
+		const id = params.id;
+		const res = await fetch(`/api/tutors/${id}`);
+		const tutor = await res.json();
+
 		return {
 			props: {
 				tutor
@@ -19,7 +18,7 @@
 	/**
 	 * @type {{ name: any; img: string | null | undefined; desc: any; rating: any; review: any; about: any; schedule: any; }}
 	 */
-	let tutor;
+	export let tutor;
 </script>
 
 <main id="main">
