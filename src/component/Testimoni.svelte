@@ -1,37 +1,32 @@
+<!-- End Testimonials Section -->
+<script>
+	import { Swiper, SwiperSlide } from 'swiper/svelte';
+	import { Autoplay, Pagination } from 'swiper';
+
+	import 'swiper/css';
+	import 'swiper/css/pagination';
+	import 'swiper/css/autoplay';
+</script>
+
 <!-- ======= Testimonials Section ======= -->
 <section id="testimonials" class="section-bg">
 	<div class="container" data-aso="zoom-in">
 		<header class="section-header">
 			<h3>What they said about TORCHE</h3>
 		</header>
+
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
-				<div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
-					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-						<div class="carousel-indicators">
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="0"
-								class="active"
-								aria-current="true"
-								aria-label="Slide 1"
-							/>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="1"
-								aria-label="Slide 2"
-							/>
-							<button
-								type="button"
-								data-bs-target="#carouselExampleIndicators"
-								data-bs-slide-to="2"
-								aria-label="Slide 3"
-							/>
-						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
+				<div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+					<div class="swiper-wrapper">
+						<Swiper
+							modules={[Autoplay, Pagination]}
+							spaceBetween={50}
+							slidesPerView={1}
+							pagination={{ clickable: true }}
+							autoplay
+						>
+							<SwiperSlide>
 								<div class="swiper-slide">
 									<div class="testimonial-item">
 										<!-- img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt=""-->
@@ -43,9 +38,9 @@
 										</p>
 									</div>
 								</div>
-							</div>
-
-							<div class="carousel-item">
+							</SwiperSlide>
+							<!-- End testimonial item -->
+							<SwiperSlide>
 								<div class="swiper-slide">
 									<div class="testimonial-item">
 										<!-- img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt=""-->
@@ -59,9 +54,9 @@
 										</p>
 									</div>
 								</div>
-							</div>
-
-							<div class="carousel-item">
+							</SwiperSlide>
+							<!-- End testimonial item -->
+							<SwiperSlide>
 								<div class="swiper-slide">
 									<div class="testimonial-item">
 										<!-- img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt=""-->
@@ -74,9 +69,9 @@
 										</p>
 									</div>
 								</div>
-							</div>
-
-							<div class="carousel-item">
+							</SwiperSlide>
+							<!-- End testimonial item -->
+							<SwiperSlide>
 								<div class="swiper-slide">
 									<div class="testimonial-item">
 										<!-- img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt=""-->
@@ -85,9 +80,9 @@
 										<p>Software tutorials from the tutor is very clear and easy to follow.</p>
 									</div>
 								</div>
-							</div>
-
-							<div class="carousel-item">
+							</SwiperSlide>
+							<!-- End testimonial item -->
+							<SwiperSlide>
 								<div class="swiper-slide">
 									<div class="testimonial-item">
 										<!-- img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt=""-->
@@ -99,30 +94,13 @@
 										</p>
 									</div>
 								</div>
-							</div>
-						</div>
-						<!-- <button
-							class="carousel-control-prev"
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide="prev"
-						>
-							<span class="carousel-control-prev-icon" aria-hidden="true" />
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button
-							class="carousel-control-next"
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide="next"
-						>
-							<span class="carousel-control-next-icon" aria-hidden="true" />
-							<span class="visually-hidden">Next</span>
-						</button> -->
+							</SwiperSlide>
+							<!-- End testimonial item -->
+						</Swiper>
 					</div>
+					<div class="swiper-pagination" />
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- End Testimonials Section -->

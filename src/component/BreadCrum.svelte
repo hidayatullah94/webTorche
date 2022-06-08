@@ -3,6 +3,7 @@
 	export let link = '';
 	export let linkOne = '';
 	export let linkTwo = '';
+	export let linkThree = '';
 </script>
 
 <!-- ======= Breadcrumbs Section ======= -->
@@ -13,6 +14,7 @@
 			<ol>
 				<li><a href={link}>{linkOne}</a></li>
 				<li>{linkTwo}</li>
+				<li>{linkThree}</li>
 			</ol>
 		</div>
 	</div>

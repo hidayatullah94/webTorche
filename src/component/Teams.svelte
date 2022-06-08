@@ -105,3 +105,8 @@
 </section>
 
 <!-- End Team Section -->
+<style>
+	#team .section-header {
+		padding-top: 25px;
+	}
+</style>

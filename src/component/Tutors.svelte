@@ -1,21 +1,12 @@
 <script>
 	import { Instagram, Linkedin, Facebook, Twitter, JournalAlbum } from 'svelte-bootstrap-icons';
-	export async function load() {
-		const response = await fetch(`@/data/Tutors.json`); // stored in static folder
-		const data = await response.json();
-
-		return {
-			data
-		};
-	}
-
-	load();
+	import tutors from '@/api/tutors';
 </script>
 
-<!-- <section id="tutors" class="tutors my-5">
+<section id="tutors" class="tutors my-5">
 	<div class="container">
 		<div class="row my-3">
-			{#each tutors as tutor, i}
+			{#each tutors as tutor}
 				<div
 					class="col-lg-4 col-md-6 d-flex align-items-stretch flex-wrap"
 					data-aos="fade-up"
@@ -24,7 +15,9 @@
 					<div class="member">
 						<img src={tutor.img} alt="img-tutor" class="img-fluid" />
 						<div class="member-content">
-							<h4><a href="/#/detailtutor/{i}">{tutor.name}</a></h4>
+							<h4>
+								<a href={`/courses/our-tutor/detailtutor/${tutor.id}`}>{tutor.name}</a>
+							</h4>
 							<span>{tutor.desc}</span>
 							<p>
 								{tutor.experience}
@@ -55,4 +48,4 @@
 			{/each}
 		</div>
 	</div>
-</section> -->
+</section>

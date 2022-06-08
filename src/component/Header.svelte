@@ -73,8 +73,8 @@
 								Courses
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="/courses/our-course">Our Courses</a></li>
-								<li><a class="dropdown-item" href="/courses/our-tutor">Our Tutors</a></li>
+								<li><a class="dropdown-item" href="/courses/course">Our Courses</a></li>
+								<li><a class="dropdown-item" href="/courses/tutor">Our Tutors</a></li>
 								<li><a class="dropdown-item" href="/courses/register">Register for Classes</a></li>
 								<li><a class="dropdown-item" href="/courses/price">Pricing</a></li>
 							</ul>
@@ -121,5 +121,11 @@
 	.activeted {
 		color: #0b6bd3;
 		font-weight: bold;
+	}
+	.dropdown-menu li a:hover {
+		color: #0b6bd3;
+		outline: none;
+		text-decoration: none;
+		background-color: transparent;
 	}
 </style>

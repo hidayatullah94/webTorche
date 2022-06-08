@@ -2,7 +2,7 @@
 	import DetailTeam from './DetailTeam.svelte';
 </script>
 
-<section>
+<section id="team">
 	<div class="container-fluid my-5">
 		<div class="container">
 			<div class="row">
