@@ -14,11 +14,16 @@
 </script>
 
 <script>
+	import { goto } from '$app/navigation';
 	import { ArrowLeft, StarFill } from 'svelte-bootstrap-icons';
 	/**
 	 * @type {{ name: any; img: string | null | undefined; desc: any; rating: any; review: any; about: any; schedule: any; }}
 	 */
 	export let tutor;
+
+	const goBack = () => {
+		history.back();
+	};
 </script>
 
 <main id="main">
@@ -38,7 +43,7 @@
 	<!-- End Breadcrumbs Section -->
 	<!--Section Tutors -->
 	<div class="container mt-3">
-		<span class="fs-5 text-dark backs"
+		<span class="fs-5 text-dark backs" on:click={goBack}
 			><i class="bi bi-arrow-left me-2 fs-4"><ArrowLeft /></i>Back</span
 		>
 	</div>

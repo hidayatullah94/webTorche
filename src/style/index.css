@@ -210,7 +210,7 @@ h6 {
 /**
   * Mobile Navigation
   */
-
+/* 
 .mobile-nav-toggle {
 	color: #d8d8d8;
 	font-size: 28px;
@@ -222,7 +222,7 @@ h6 {
 .mobile-nav-toggle.bi-x {
 	color: #fff;
 }
-/*
+
 @media (max-width: 991px) {
 	.mobile-nav-toggle {
 		display: block;
@@ -298,6 +298,7 @@ h6 {
 .navbar-mobile .dropdown > .dropdown-active {
 	display: block;
 } */
+*/ */
 
 /*--------------------------------------------------------------
   # Hero Section

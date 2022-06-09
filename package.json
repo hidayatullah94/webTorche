@@ -2,6 +2,7 @@
 	"name": "website",
 	"version": "0.0.1",
 	"scripts": {
+		"deploy": "node ./gh-pages.js",
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
@@ -14,10 +15,12 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.34",
 		"@sveltejs/kit": "next",
 		"eslint": "^8.12.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^4.0.0",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
 		"svelte-check": "^2.2.6",
@@ -25,6 +28,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@srexi/purecounterjs": "^1.5.0",
 		"aos": "^3.0.0-beta.6",
 		"svelte-bootstrap-icons": "^1.8.2",
 		"swiper": "^8.2.2"

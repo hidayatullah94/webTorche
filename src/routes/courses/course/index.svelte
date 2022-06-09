@@ -1,19 +1,25 @@
-<script>
+<script context="module">
 	import BreadCrum from '@/component/BreadCrum.svelte';
 	import { StarFill } from 'svelte-bootstrap-icons';
 
-	const url = `http://localhost:3000`;
-	/**
-	 * @type {any[]}
-	 */
-	let course = [];
-	async function getData() {
-		const res = fetch(`${url}/api/course`);
-		const data = await (await res).json();
-		course = data.course;
-	}
+	// @ts-ignore
+	export const load = async ({ fetch }) => {
+		const res = await fetch(`/api/course`);
+		const course = await res.json(); // returned as array
 
-	getData();
+		return {
+			props: {
+				course
+			}
+		};
+	};
+</script>
+
+<script>
+	export /**
+	 * @type {any}
+	 */
+	let course;
 </script>
 
 <BreadCrum name={'Courses'} link={'/'} linkOne={'Courses'} linkTwo={'Our Courses'} />
@@ -38,19 +44,20 @@
 							<p class="course-description">{corse.desc}</p>
 							<div class="trainer d-flex justify-content-between align-items-center">
 								<div class="trainer-profile d-flex align-items-center">
-									<img src={corse.tutor.tutor1.photo} class="img1 img-fluid" alt="" />
-									<img src={corse.tutor.tutor2.photo} class="img2 img-fluid" alt="" />
-									<img src={corse.tutor.tutor3.photo} class="img3 img-fluid" alt="" />
-									<span class="tritutors">
-										{#if corse.tutor.tutor1.name != ''}
-											<a href="/#/detailcoursetutor1/">{corse.tutor.tutor1.name}</a>
-										{/if}
-										{#if corse.tutor.tutor2.name != ''}
-											, <a href="/#/detailcoursetutor2/">{corse.tutor.tutor2.name}</a>
-										{/if}
-										{#if corse.tutor.tutor3.name != ''}
-											, <a href="/#/detailcoursetutor3/">{corse.tutor.tutor3.name}</a>
-										{/if}
+									{#each corse.tutor as tutor}
+										<img src={tutor.photo} class="img1 img-fluid" alt="" />
+									{/each}
+
+									<span class="">
+										{#each corse.tutor as tutor}
+											{#if tutor.name != ''}
+												<a href="/courses/tutor/{tutor.id}">{tutor.name}</a> ,
+											{/if}
+										{/each}
+
+										<!-- {#if corse.tutor.tutor3.name != ''}
+											, <a href="/detailcoursetutor3/">{corse.tutor.tutor3.name}</a>
+										{/if} -->
 									</span>
 								</div>
 								<!-- div class="trainer-rank d-flex align-items-center">

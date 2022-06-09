@@ -41,4 +41,10 @@
 		</div>
 	</div>
 </section>
+
 <!-- End Contact Section -->
+<style>
+	#contact .section-header {
+		padding-top: 25px;
+	}
+</style>
