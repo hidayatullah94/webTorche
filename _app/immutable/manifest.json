@@ -1,0 +1,277 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-2afd4713.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/about/index.svelte",
+      "src/routes/clientss/index.svelte",
+      "src/routes/contact/index.svelte",
+      "src/routes/courses/course/[id].svelte",
+      "src/routes/courses/course/index.svelte",
+      "src/routes/courses/price/index.svelte",
+      "src/routes/courses/register/index.svelte",
+      "src/routes/courses/tutor/[id].svelte",
+      "src/routes/courses/tutor/index.svelte",
+      "src/routes/index.svelte",
+      "src/routes/servicess/index.svelte",
+      "src/routes/team/fullteam.svelte",
+      "src/routes/team/team.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-38e84ef7.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-2349a0d1.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-0cdf8a71.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js"
+    ]
+  },
+  "src/routes/about/index.svelte": {
+    "file": "pages/about/index.svelte-e766af3d.js",
+    "src": "src/routes/about/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_About-54d64960.js",
+      "_Footer-60e6e2f3.js"
+    ]
+  },
+  "src/routes/clientss/index.svelte": {
+    "file": "pages/clientss/index.svelte-7ef5814e.js",
+    "src": "src/routes/clientss/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Clients-0af79204.js",
+      "_Footer-60e6e2f3.js"
+    ]
+  },
+  "src/routes/contact/index.svelte": {
+    "file": "pages/contact/index.svelte-43f0cde7.js",
+    "src": "src/routes/contact/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Contacts-04023c90.js",
+      "_Footer-60e6e2f3.js"
+    ]
+  },
+  "src/routes/courses/course/[id].svelte": {
+    "file": "pages/courses/course/_id_.svelte-5b904c2f.js",
+    "src": "src/routes/courses/course/[id].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js"
+    ]
+  },
+  "src/routes/courses/course/index.svelte": {
+    "file": "pages/courses/course/index.svelte-3003c674.js",
+    "src": "src/routes/courses/course/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_StarFill-966f8166.js",
+      "_BreadCrum-306182da.js"
+    ]
+  },
+  "src/routes/courses/price/index.svelte": {
+    "file": "pages/courses/price/index.svelte-ee6d90d4.js",
+    "src": "src/routes/courses/price/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js",
+      "_BreadCrum-306182da.js"
+    ]
+  },
+  "src/routes/courses/register/index.svelte": {
+    "file": "pages/courses/register/index.svelte-6a2241ab.js",
+    "src": "src/routes/courses/register/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js",
+      "_BreadCrum-306182da.js"
+    ]
+  },
+  "src/routes/courses/tutor/[id].svelte": {
+    "file": "pages/courses/tutor/_id_.svelte-54524d4c.js",
+    "src": "src/routes/courses/tutor/[id].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_singletons-d1fb5791.js",
+      "_StarFill-966f8166.js"
+    ]
+  },
+  "src/routes/courses/tutor/index.svelte": {
+    "file": "pages/courses/tutor/index.svelte-1adddf0e.js",
+    "src": "src/routes/courses/tutor/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_BreadCrum-306182da.js",
+      "_Footer-60e6e2f3.js",
+      "_JournalAlbum-ff9e61a4.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-ee00b2e6.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js",
+      "_About-54d64960.js",
+      "_WhyUs-81f1a557.js",
+      "_Teams-c0232737.js",
+      "_Clients-0af79204.js",
+      "_Contacts-04023c90.js",
+      "_JournalAlbum-ff9e61a4.js"
+    ]
+  },
+  "src/routes/servicess/index.svelte": {
+    "file": "pages/servicess/index.svelte-975cb3d5.js",
+    "src": "src/routes/servicess/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_WhyUs-81f1a557.js",
+      "_Footer-60e6e2f3.js"
+    ]
+  },
+  "src/routes/team/fullteam.svelte": {
+    "file": "pages/team/fullteam.svelte-3ac1602b.js",
+    "src": "src/routes/team/fullteam.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js"
+    ]
+  },
+  "src/routes/team/team.svelte": {
+    "file": "pages/team/team.svelte-75db15d3.js",
+    "src": "src/routes/team/team.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-94b01d53.js",
+      "_Teams-c0232737.js",
+      "_Footer-60e6e2f3.js",
+      "_JournalAlbum-ff9e61a4.js"
+    ]
+  },
+  "_index-94b01d53.js": {
+    "file": "chunks/index-94b01d53.js"
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_About-54d64960.js": {
+    "file": "chunks/About-54d64960.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ],
+    "css": [
+      "assets/About-09586a08.css"
+    ]
+  },
+  "_Footer-60e6e2f3.js": {
+    "file": "chunks/Footer-60e6e2f3.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ],
+    "css": [
+      "assets/Footer-4614da06.css"
+    ]
+  },
+  "_Clients-0af79204.js": {
+    "file": "chunks/Clients-0af79204.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ],
+    "css": [
+      "assets/Clients-c23d57c8.css"
+    ]
+  },
+  "_Contacts-04023c90.js": {
+    "file": "chunks/Contacts-04023c90.js",
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js"
+    ],
+    "css": [
+      "assets/Contacts-374217fd.css"
+    ]
+  },
+  "_StarFill-966f8166.js": {
+    "file": "chunks/StarFill-966f8166.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ]
+  },
+  "_BreadCrum-306182da.js": {
+    "file": "chunks/BreadCrum-306182da.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ]
+  },
+  "_JournalAlbum-ff9e61a4.js": {
+    "file": "chunks/JournalAlbum-ff9e61a4.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ]
+  },
+  "_WhyUs-81f1a557.js": {
+    "file": "chunks/WhyUs-81f1a557.js",
+    "imports": [
+      "_index-94b01d53.js"
+    ],
+    "css": [
+      "assets/WhyUs-a5127d2c.css"
+    ]
+  },
+  "_Teams-c0232737.js": {
+    "file": "chunks/Teams-c0232737.js",
+    "imports": [
+      "_index-94b01d53.js",
+      "_Footer-60e6e2f3.js",
+      "_JournalAlbum-ff9e61a4.js"
+    ],
+    "css": [
+      "assets/Teams-4829f497.css"
+    ]
+  }
+}
