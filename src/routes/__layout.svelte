@@ -11,6 +11,7 @@
 
 	onMount(() => {
 		AOS.init();
+		AOS.refresh();
 	});
 </script>
 

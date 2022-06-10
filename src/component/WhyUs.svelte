@@ -1,33 +1,35 @@
-<!-- <script context="module">
+<script context="module">
 	import PureCounter from '@srexi/purecounterjs';
+	const pure = new PureCounter();
 	import { onMount } from 'svelte';
 </script>
 
 <script>
-	new PureCounter({
-		// Setting that can't' be overriden on pre-element
-		selector: '.purecounter', // HTML query selector for spesific element
-
-		// Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
-		start: 0, // Starting number [uint]
-		end: 100, // End number [uint]
-		duration: 2, // The time in seconds for the animation to complete [seconds]
-		delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
-		once: true, // Counting at once or recount when the element in view [boolean]
-		pulse: false, // Repeat count for certain time [boolean:false|seconds]
-		decimals: 0, // How many decimal places to show. [uint]
-		legacy: true, // If this is true it will use the scroll event listener on browsers
-		filesizing: false, // This will enable/disable File Size format [boolean]
-		currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
-		formater: 'us-US', // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
-		separator: false // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
+	onMount(() => {
+		new PureCounter({
+			// Setting that can't' be overriden on pre-element
+			selector: '.purecounter', // HTML query selector for spesific element
+			// Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
+			start: 0, // Starting number [uint]
+			end: 100, // End number [uint]
+			duration: 2, // The time in seconds for the animation to complete [seconds]
+			delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
+			once: true, // Counting at once or recount when the element in view [boolean]
+			pulse: false, // Repeat count for certain time [boolean:false|seconds]
+			decimals: 0, // How many decimal places to show. [uint]
+			legacy: true, // If this is true it will use the scroll event listener on browsers
+			filesizing: false, // This will enable/disable File Size format [boolean]
+			currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
+			formater: 'us-US', // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
+			separator: false // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
+		});
 	});
-</script> -->
+</script>
 
 <!-- ======= Why Us Section ======= -->
 <section id="why-us">
 	<div class="container" data-aos="fade-up">
-		<header class="section-header">
+		<header class="section-header ">
 			<h3>Why TORCHE?</h3>
 			<p>
 				Not only giving the best process engineering curriculum, we also provides services that our
