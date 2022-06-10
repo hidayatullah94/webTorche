@@ -7,13 +7,12 @@ const dev = 'production' === 'development';
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs'
+			pages: 'build',
+			assets: 'build'
 		}),
 		paths: {
-			base: dev ? '"' : 'https://github.com/hidayatullah94/webTorche.git'
+			base: dev ? '"' : '/https://github.com/hidayatullah94/webTorche'
 		},
-		target: '#svelte',
 		vite: {
 			resolve: {
 				alias: {
