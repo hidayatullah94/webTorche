@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
 	import PureCounter from '@srexi/purecounterjs';
 	const pure = new PureCounter();
 	import { onMount } from 'svelte';
@@ -24,7 +24,7 @@
 			separator: false // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
 		});
 	});
-</script>
+</script> -->
 
 <!-- ======= Why Us Section ======= -->
 <section id="why-us">
