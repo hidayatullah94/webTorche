@@ -11,7 +11,8 @@
 		"check": "svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"start": "node /build/index.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -29,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"@srexi/purecounterjs": "^1.5.0",
+		"@sveltejs/adapter-node": "^1.0.0-next.78",
 		"aos": "^3.0.0-beta.6",
 		"svelte-bootstrap-icons": "^1.8.2",
 		"swiper": "^8.2.2"

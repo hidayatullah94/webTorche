@@ -1,4 +1,4 @@
-import adapter_static from '@sveltejs/adapter-static';
+import adapter_static from '@sveltejs/adapter-node';
 import { resolve } from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
