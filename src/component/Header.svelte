@@ -69,7 +69,7 @@
 			</li>
 			<li>
 				<a
-					class={current === 'nav-link contact d-flex flex-direction-row' ? 'activeted' : ''}
+					class={current === 'nav-link contact' ? 'activeted' : ''}
 					on:click={() => (current = 'nav-link contact')}
 					href="/contact"><span class="me-1">Contact</span><span>Us</span></a
 				>
