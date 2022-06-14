@@ -1,7 +1,7 @@
 <script context="module">
 	// @ts-ignore
 	export const load = async ({ fetch }) => {
-		const res = await fetch(`/api/tutors`);
+		const res = await fetch(`/api/tutors/all`);
 		const tutors = await res.json(); // returned as array
 
 		return {

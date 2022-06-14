@@ -11,7 +11,8 @@ const config = {
 					'@': resolve('./src')
 				}
 			}
-		}
+		},
+		prerender: { default: true }
 	}
 };
 

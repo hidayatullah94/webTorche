@@ -13,7 +13,7 @@
 <div id="header" class="fixed-top d-flex align-items-center">
 	<div class="container d-flex justify-content-between">
 		<div class="logo">
-			<a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid" /></a>
+			<a href="/"><img src="/assets/img/logo.png" alt="" class="img-fluid" /></a>
 		</div>
 	</div>
 	<nav id="navbar" class="navbar">
