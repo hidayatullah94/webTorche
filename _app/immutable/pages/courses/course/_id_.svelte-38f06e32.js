@@ -1,1 +1,0 @@
-import{S as a,i as e,s as r}from"../../../chunks/index-94b01d53.js";const u=async({params:t,fetch:s})=>{const n=t.id,o=await(await s(`/api/tutors/${n}`)).json();return console.log(o),{props:{tutor:o}}};class c extends a{constructor(s){super(),e(this,s,null,null,r,{})}}export{c as default,u as load};
