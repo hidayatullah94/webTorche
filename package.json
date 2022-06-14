@@ -29,10 +29,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@srexi/purecounterjs": "^1.5.0",
 		"@sveltejs/adapter-node": "^1.0.0-next.78",
 		"aos": "^3.0.0-beta.6",
 		"svelte-bootstrap-icons": "^1.8.2",
+		"svelte-counter": "^1.0.0",
 		"swiper": "^8.2.2"
 	}
 }

@@ -1,35 +1,34 @@
-<!-- <script context="module">
-	import PureCounter from '@srexi/purecounterjs';
-	const pure = new PureCounter();
-	import { onMount } from 'svelte';
-</script>
-
 <script>
+	import { onDestroy, onMount } from 'svelte';
+	// @ts-ignore
+	import Counter from 'svelte-counter';
+	const scrollBar = 120;
+	let show = false;
+	let counters = {
+		Students: 864,
+		Classes: 1552,
+		Tutors: 22
+	};
+
 	onMount(() => {
-		new PureCounter({
-			// Setting that can't' be overriden on pre-element
-			selector: '.purecounter', // HTML query selector for spesific element
-			// Settings that can be overridden on per-element basis, by `data-purecounter-*` attributes:
-			start: 0, // Starting number [uint]
-			end: 100, // End number [uint]
-			duration: 2, // The time in seconds for the animation to complete [seconds]
-			delay: 10, // The delay between each iteration (the default of 10 will produce 100 fps) [miliseconds]
-			once: true, // Counting at once or recount when the element in view [boolean]
-			pulse: false, // Repeat count for certain time [boolean:false|seconds]
-			decimals: 0, // How many decimal places to show. [uint]
-			legacy: true, // If this is true it will use the scroll event listener on browsers
-			filesizing: false, // This will enable/disable File Size format [boolean]
-			currency: false, // This will enable/disable Currency format. Use it for set the symbol too [boolean|char|string]
-			formater: 'us-US', // Number toLocaleString locale/formater, by default is "en-US" [string|boolean:false]
-			separator: false // This will enable/disable comma separator for thousands. Use it for set the symbol too [boolean|char|string]
-		});
+		window.onscroll = () => {
+			if (window.scrollY > scrollBar) {
+				show = true;
+			} else {
+				show = false;
+			}
+		};
 	});
-</script> -->
+
+	onDestroy(() => {
+		window.onscroll = () => {};
+	});
+</script>
 
 <!-- ======= Why Us Section ======= -->
 <section id="why-us">
 	<div class="container" data-aos="fade-up">
-		<header class="section-header ">
+		<header class="section-header">
 			<h3>Why TORCHE?</h3>
 			<p>
 				Not only giving the best process engineering curriculum, we also provides services that our
@@ -74,42 +73,30 @@
 			</div>
 		</div>
 
-		<div class="row counters" data-aos="fade-up" data-aos-delay="100">
-			<div class="col-lg-3 col-6 text-center">
-				<span
-					data-purecounter-start="0"
-					data-purecounter-end="864"
-					data-purecounter-duration="1"
-					class="purecounter"
-				/>
-				<p>Unique Students*</p>
-			</div>
+		<Counter values={counters} duration="2000" random="false" minspeed="100" let:counterResult>
+			<div class="row counters" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-lg-3 col-6 text-center">
+					<span>{counterResult.Students}</span>
+					<p>Unique Students*</p>
+				</div>
 
-			<div class="col-lg-3 col-6 text-center">
-				<span
-					data-purecounter-start="0"
-					data-purecounter-end="1552"
-					data-purecounter-duration="1"
-					class="purecounter"
-				/>
-				<p>Classes*</p>
-			</div>
+				<div class="col-lg-3 col-6 text-center">
+					<span>{counterResult.Classes}</span>
+					<p>Classes*</p>
+				</div>
 
-			<div class="col-lg-3 col-6 text-center">
-				<span>9/10</span>
-				<p>Ratings from students*</p>
-			</div>
+				<div class="col-lg-3 col-6 text-center">
+					<span>9/10</span>
+					<p>Ratings from students*</p>
+				</div>
 
-			<div class="col-lg-3 col-6 text-center">
-				<span
-					data-purecounter-start="0"
-					data-purecounter-end="22"
-					data-purecounter-duration="1"
-					class="purecounter"
-				/>
-				<p>High Quality Tutors</p>
+				<div class="col-lg-3 col-6 text-center">
+					<span>{counterResult.Tutors}</span>
+					<p>High Quality Tutors</p>
+				</div>
 			</div>
-		</div>
+		</Counter>
+
 		<div class="row counters" data-aos="fade-up">
 			<div class="col-lg-12 col-12 text-center">
 				<p>*data from 2021</p>
@@ -117,4 +104,66 @@
 		</div>
 	</div>
 </section>
+
 <!-- End Why Us Section -->
+<style>
+	#why-us {
+		padding: 60px 0;
+		background: #121d42;
+	}
+	#why-us .section-header h3,
+	#why-us .section-header p {
+		color: #fff;
+	}
+	#why-us .card {
+		background: #0b122a;
+		border-color: #0b122a;
+		border-radius: 10px;
+		margin: 0 15px;
+		padding: 15px 0;
+		text-align: center;
+		color: #fff;
+		transition: 0.3s ease-in-out;
+		height: 100%;
+	}
+	@media (max-width: 991px) {
+		#why-us .card {
+			margin: 0;
+		}
+	}
+	#why-us .card:hover {
+		background: #5885e9;
+		border-color: #5885e9;
+	}
+	#why-us .card i {
+		font-size: 48px;
+		padding-top: 15px;
+		color: #bfddfe;
+	}
+	#why-us .card h5 {
+		font-size: 22px;
+		font-weight: 600;
+	}
+	#why-us .card p {
+		font-size: 15px;
+		color: #d8eafe;
+	}
+
+	#why-us .counters {
+		padding-top: 40px;
+	}
+	#why-us .counters span {
+		font-family: 'Rajdhani', sans-serif;
+		font-weight: bold;
+		font-size: 48px;
+		display: block;
+		color: #fff;
+	}
+	#why-us .counters p {
+		padding: 0;
+		margin: 0 0 20px 0;
+		font-family: 'Cairo', sans-serif;
+		font-size: 14px;
+		color: #cce5ff;
+	}
+</style>
