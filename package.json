@@ -33,6 +33,7 @@
 		"aos": "^3.0.0-beta.6",
 		"svelte-bootstrap-icons": "^1.8.2",
 		"svelte-counter": "^1.0.0",
+		"svelte-inview": "^3.0.1",
 		"swiper": "^8.2.2"
 	}
 }

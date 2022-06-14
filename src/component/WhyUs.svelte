@@ -1,28 +1,15 @@
 <script>
-	import { onDestroy, onMount } from 'svelte';
 	// @ts-ignore
 	import Counter from 'svelte-counter';
-	const scrollBar = 120;
-	let show = false;
+	import { inview } from 'svelte-inview';
+
 	let counters = {
 		Students: 864,
 		Classes: 1552,
 		Tutors: 22
 	};
 
-	onMount(() => {
-		window.onscroll = () => {
-			if (window.scrollY > scrollBar) {
-				show = true;
-			} else {
-				show = false;
-			}
-		};
-	});
-
-	onDestroy(() => {
-		window.onscroll = () => {};
-	});
+	let startCounter = false;
 </script>
 
 <!-- ======= Why Us Section ======= -->
@@ -73,29 +60,38 @@
 			</div>
 		</div>
 
-		<Counter values={counters} duration="2000" random="false" minspeed="100" let:counterResult>
-			<div class="row counters" data-aos="fade-up" data-aos-delay="100">
-				<div class="col-lg-3 col-6 text-center">
-					<span>{counterResult.Students}</span>
-					<p>Unique Students*</p>
-				</div>
+		<div
+			use:inview
+			on:change={({ detail }) => {
+				startCounter = !startCounter && detail.inView;
+			}}
+		>
+			{#if startCounter}
+				<Counter values={counters} duration="2000" random="false" minspeed="100" let:counterResult>
+					<div class="row counters" data-aos="fade-up" data-aos-delay="100">
+						<div class="col-lg-3 col-6 text-center">
+							<span>{counterResult.Students}</span>
+							<p>Unique Students*</p>
+						</div>
 
-				<div class="col-lg-3 col-6 text-center">
-					<span>{counterResult.Classes}</span>
-					<p>Classes*</p>
-				</div>
+						<div class="col-lg-3 col-6 text-center">
+							<span>{counterResult.Classes}</span>
+							<p>Classes*</p>
+						</div>
 
-				<div class="col-lg-3 col-6 text-center">
-					<span>9/10</span>
-					<p>Ratings from students*</p>
-				</div>
+						<div class="col-lg-3 col-6 text-center">
+							<span>9/10</span>
+							<p>Ratings from students*</p>
+						</div>
 
-				<div class="col-lg-3 col-6 text-center">
-					<span>{counterResult.Tutors}</span>
-					<p>High Quality Tutors</p>
-				</div>
-			</div>
-		</Counter>
+						<div class="col-lg-3 col-6 text-center">
+							<span>{counterResult.Tutors}</span>
+							<p>High Quality Tutors</p>
+						</div>
+					</div>
+				</Counter>
+			{/if}
+		</div>
 
 		<div class="row counters" data-aos="fade-up">
 			<div class="col-lg-12 col-12 text-center">
