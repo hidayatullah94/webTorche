@@ -75,9 +75,21 @@ h6 {
 	width: 100%;
 	position: relative;
 	background-color: #0b122a;
-	/* background: url('./assets/img/hero-bg.png') center bottom no-repeat;
+	/* background: url('../assets/img/hero-bg.png') center bottom no-repeat;
 	background-size: cover; */
 	padding: 200px 0 120px 0;
+	clip-path: polygon(
+		50% 0%,
+		100% 0,
+		100% 95%,
+		85% 97%,
+		61% 99%,
+		50% 99%,
+		39% 99%,
+		18% 97%,
+		0 95%,
+		0 0
+	);
 }
 @media (max-width: 991px) {
 	#hero {
