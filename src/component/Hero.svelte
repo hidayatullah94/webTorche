@@ -2,7 +2,7 @@
 <section id="hero" class="clearfix">
 	<div class="container" data-aos="fade-up">
 		<div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
-			<img src="./assets/img/hero-img.webp" alt="" class="img-fluid" />
+			<img src="../assets/img/hero-img.webp" alt="" class="img-fluid" />
 		</div>
 
 		<div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
